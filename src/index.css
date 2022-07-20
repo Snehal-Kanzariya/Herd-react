@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    .container {
+        @apply mx-auto;
+    }
+
+    .nav {
+        @apply font-sans font-normal text-base leading-5 tracking-wider text-black
+    }
+
+    .content {
+        @apply font-sans font-normal leading-7 text-center tracking-wider text-gray-300
+    }
+
+    .content-bg {
+        @apply max-w-1144 bg-white text-gray-300
+    }
+
+    .title {
+        @apply font-sans text-35 tracking-wider text-green font-normal leading-44;
+    }
+}
