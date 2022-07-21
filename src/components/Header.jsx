@@ -9,7 +9,6 @@ import userIcon from '../assets/user.svg'
 import cartIcon from '../assets/cart_black.svg'
 import closeIcon from '../assets/close.svg'
 import bgmenu from '../assets/menubg.png';
-import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -23,7 +22,7 @@ const Navbar = () => {
 
     return (
         <div className="header">
-            <ul className="text-white smallest:text-10 sm:text-base flex text-right justify-end bg-black">
+            <ul className="text-white smallest:text-10 sm:text-base flex text-right justify-end bg-black-100">
                 <li className="p-3">
                     <a href="#" className='flex'>
                         <img src={loginImg} alt="" className='pr-2' />
@@ -64,7 +63,7 @@ const Navbar = () => {
                     </ul>
                     <div className="buttons smallest:hidden sm:hidden lg:flex lg:items-center">
                         <button
-                            className="p-2 nav text-15 items-center text-16 mr-19 bg-transparent text-black px-5 border border-black hover:bg-black hover:text-white hover:border-transparent rounded">
+                            className="p-2 nav text-15 items-center text-16 mr-19 bg-transparent text-black-100 px-5 border border-black-100 hover:bg-black-100 hover:text-white hover:border-transparent rounded">
                             Foster An Elephant
                         </button>
                         <button className="p-2 nav text-15 bg-green text-white border border-green rounded hover:bg-transparent hover:text-green">
@@ -84,7 +83,7 @@ const Navbar = () => {
                 <div className="offcanvas-header flex items-center justify-between p-4 ">
                     <img src={logoImg} alt="" id="offcanvasRightLabel" />
                     <button type="button" invisible
-                        className="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                        className="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black-100 border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black-100 hover:opacity-75 hover:no-underline"
                         data-bs-dismiss="offcanvas" aria-label="Close"><img src={closeIcon} alt="" /></button>
                 </div>
                 <div className="offcanvas-body p-4 overflow-y-auto font-sans">
@@ -94,9 +93,7 @@ const Navbar = () => {
                     <div className="lg:flex mt-40">
                         <div className="lg:ml-28 xl:ml-164">
                             <ul className="lg:mr-20 sm:mr-55">
-                                <li className="text-[28px]">
-                                    <Link to="/">Foster</Link>
-                                </li>
+                                <li className="text-[28px]">Foster</li>
                                 <li className="text-[28px]">Donate</li>
                                 <li className="text-[28px]">shop</li>
                             </ul>

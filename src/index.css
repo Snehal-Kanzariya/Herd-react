@@ -9,7 +9,7 @@
     }
 
     .nav {
-        @apply font-sans font-normal text-base leading-5 tracking-wider text-black
+        @apply font-sans font-normal text-base leading-5 tracking-wider text-black-100
     }
 
     .content {
