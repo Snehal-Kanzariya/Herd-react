@@ -23,4 +23,8 @@
     .title {
         @apply font-sans text-35 tracking-wider text-green font-normal leading-44;
     }
+
+    .circle {
+        @apply h-264 w-264 rounded-full bg-gray-100
+    }
 }

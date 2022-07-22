@@ -3,15 +3,15 @@ import grid1 from '../assets/grid1.png';
 import grid2 from '../assets/grid2.png';
 import grid3 from '../assets/grid3.png';
 
-const Help = () => {
+const Help = ({ mainTitle, mainParagraph, isBgGray }) => {
     return (
-        <section className="pt-93 pb-100 bg-gray-100">
+        <section className={`pt-93 pb-100 ${isBgGray && 'bg-gray-100'}`}>
             <div className="help-header">
                 <h1 className="font-sans text-black xs:text-xl lg:!text-3xl uppercase text-center">
-                    How you can help
+                    {mainTitle}
                 </h1>
                 <p className="pt-13 mx-auto my-0 font-sans text-gray-200 max-w-662 text-center text-sm xs:px-25 md:px-50">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    {mainParagraph}
                 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-25 xs:px-25 md:!px-50 pt-50">

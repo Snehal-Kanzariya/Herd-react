@@ -9,7 +9,7 @@ import youtube from '../assets/youtube.svg';
 
 const Footer = () => {
     return (
-        <footer className="">
+        <footer>
             <div className="bg-black-200 pt-60 pb-79 lg:!block xs:hidden ">
                 <div className="container justify-center flex">
                     <img src={FooterElephant} alt="" />

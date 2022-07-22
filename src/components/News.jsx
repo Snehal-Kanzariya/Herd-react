@@ -3,21 +3,20 @@ import grid1 from '../assets/Herdgrid.png';
 import grid2 from '../assets/communitygrid.png';
 import grid3 from '../assets/Orphanagegrid.png';
 
-const News = () => {
+const News = ({ mainTitle, description }) => {
     return (
         <section class="pt-144 pb-150">
             <div class="grid-upper">
                 <div class="flex justify-center grid-title text-30 text-black-100 uppercase title">
-                    <h2 class="text-gray-500">LATEST NEWS</h2>
+                    <h2 class="text-gray-500 text-center">{mainTitle}</h2>
                 </div>
                 <div class=" grid-content">
-                    <p class="pb-50 font-sans font-normal text-15 max-w-662 text-center mx-auto my-0 text-gray-200 xs:px-5 sm:px-0">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    <p class="pb-50 pt-5 font-sans font-normal text-15 max-w-662 text-center mx-auto my-0 text-gray-200 xs:px-5 sm:px-0">
+                        {description}
                     </p>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 xs:px-25 md:px-50">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 xs:px-25 md:!px-50">
                 <div>
                     <img src={grid1} alt="" class="xs:w-full" />
                     <div class="subtitle font-sans text-13 tracking-tighter text-gray-200 leading-4 pt-23 pb-9">
