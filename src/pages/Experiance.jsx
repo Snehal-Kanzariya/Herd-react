@@ -21,6 +21,7 @@ const Experiance = () => {
             />
             <Content
                 description="Ever wanted to know what it would belike to be a elephant for a day?  lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Join them in their day, respectfully, consectetur adipiscing elit."
+                description1="Join them in their day, respectfully, consectetur adipiscing elit."
             />
             <Zigzag
                 zigzagImg={experience1}
@@ -39,6 +40,8 @@ const Experiance = () => {
                 isReverse={false}
                 title={"After Lunch"}
                 paragraph={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, "}
+                paragraph1="Join the elephants after their afternoon walk for Elelphant moments,
+                meet the 3 bulls from the herd, respectfully, eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 buttonText={"Book An Elephant Moment"}
                 isButton={true}
             />

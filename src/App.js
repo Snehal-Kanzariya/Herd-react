@@ -7,8 +7,15 @@
 // import Zigzag from './components/Zigzag';
 // import ImageGrid from './components/ImageGrid';
 import './dist/style.css'
-import Donation from './pages/Donation';
-import Experiance from './pages/Experiance';
+import Location from './pages/Location';
+// import CommuintyProjects from './pages/CommuintyProjects';
+// import Fundraising from './pages/Fundraising';
+// import FundraisingEvents from './pages/FundraisingEvents';
+// import HerdShop from './pages/HerdShop';
+// import OurStory from './pages/OurStory';
+// import Donation from './pages/Donation';
+// import Experiance from './pages/Experiance';
+// import Projects from './pages/Projects';
 // import WishList from './pages/WishList';
 // import LeaveLegacy from './pages/LeaveLegacy';
 // import HelpHerd from './pages/HelpHerd';
@@ -17,6 +24,7 @@ import Experiance from './pages/Experiance';
 // import MeetHerd from './pages/MeetHerd';
 // import Foster from './pages/Foster';
 // import Orphans from './pages/Orphans';
+import MeetTeam from './pages/MeetTeam';
 // import Home from './pages/Home';
 // import Routing from './Routing';
 
@@ -43,7 +51,15 @@ function App() {
       {/* <LeaveLegacy /> */}
       {/* <WishList /> */}
       {/* <Donation /> */}
-      <Experiance />
+      {/* <Experiance /> */}
+      {/* <Projects /> */}
+      {/* <CommuintyProjects /> */}
+      {/* <Fundraising /> */}
+      {/* <FundraisingEvents /> */}
+      {/* <HerdShop /> */}
+      {/* <OurStory /> */}
+      {/* <MeetTeam /> */}
+      <Location />
 
     </>
   );

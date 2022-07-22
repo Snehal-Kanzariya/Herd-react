@@ -1,7 +1,7 @@
 import React from 'react'
 import rightArrow from '../assets/arrow_right.svg'
 
-const Zigzag = ({ zigzagImg, isPr, isReverse, isPt136, title, paragraph, buttonText, isButton, isPb }) => {
+const Zigzag = ({ zigzagImg, isPr, isReverse, isPt136, title, paragraph, paragraph1, paragraph2, paragraph3, buttonText, isButton, isPb }) => {
     return (
         <>
             <section className={`lg:flex pt-150 ${isPb ? 'pb-0' : 'pb-20 sm:pb-150'}`}>
@@ -14,6 +14,15 @@ const Zigzag = ({ zigzagImg, isPr, isReverse, isPt136, title, paragraph, buttonT
                             <h1 className="title xs:text-center sm:!text-left">{title}</h1>
                             <p className="xs:px-3 sm:px-0 font-sans pt-5 text-gray-200 text-15 leading-19 tracking-wider font-normal">
                                 {paragraph}
+                            </p>
+                            <p className="xs:px-3 sm:px-0 font-sans pt-5 text-gray-200 text-15 leading-19 tracking-wider font-normal">
+                                {paragraph1}
+                            </p>
+                            <p className="xs:px-3 sm:px-0 font-sans pt-5 text-gray-200 text-15 leading-19 tracking-wider font-normal">
+                                {paragraph2}
+                            </p>
+                            <p className="xs:px-3 sm:px-0 font-sans pt-5 text-gray-200 text-15 leading-19 tracking-wider font-normal">
+                                {paragraph3}
                             </p>
                             {isButton &&
                                 <button className="pt-7 xs:px-3 sm:px-0">
