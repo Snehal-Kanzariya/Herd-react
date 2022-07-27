@@ -10,6 +10,7 @@ module.exports = {
 
       screens: {
         xs: { 'min': '300px' },
+        small: { 'min': '400px' },
         s: { 'min': '500px' },
         smallest: { 'max': '639px' },
         laptop: { 'min': '1306px' },
@@ -29,6 +30,7 @@ module.exports = {
         16: '16px',
         17: '17px',
         22: '22px',
+        25: '25px',
         27: '27px',
         28: '28px',
         30: '30px',
@@ -57,13 +59,16 @@ module.exports = {
       gap: {
         15: '15px',
         25: '25px',
+        29: '29px',
         74: '74px',
       },
 
       lineHeight: {
         13: '13px',
+        14: '14px',
         18: '18px',
         19: '19px',
+        31: '31px',
         34: '34px',
         35: '35px',
         44: '44px',
@@ -91,6 +96,10 @@ module.exports = {
         300: '300px',
         327: '327px',
 
+      },
+
+      borderRadius: {
+        750: '750px',
       },
 
       colors: {
@@ -123,16 +132,25 @@ module.exports = {
         21: '21px',
         23: '23px',
         25: '25px',
+        26: '26px',
         27: '27px',
         28.87: '28.87px',
+        29: '29px',
         30: '30px',
         31.91: '31.91px',
         33: '33px',
         37: '37px',
+        38: '38px',
+        39: '39px',
+        43: '43px',
         44: '44px',
+        45: '45px',
+        48: '48px',
+        49: '49px',
         50: '50px',
         52: '52px',
         53: '53px',
+        59: '59px',
         60: '60px',
         62: '62px',
         63: '63px',
@@ -145,6 +163,7 @@ module.exports = {
         93: '93px',
         100: '100px',
         106: '106px',
+        113: '113px',
         115: '115px',
         117: '117px',
         123: '123px',
@@ -153,10 +172,14 @@ module.exports = {
         133: '137px',
         136: '136px',
         137: '137px',
+        142: '142px',
         144: '144px',
         148: '148px',
         150: '150px',
         153: '153px',
+        160: '160px',
+        165: '165px',
+        208: '208px',
         212: '212px',
       },
 
@@ -168,6 +191,7 @@ module.exports = {
         74: '74px',
         82: '82px',
         89: '89px',
+        99: '99px',
         100: '100px',
         148: '148px',
         164: '164px',
@@ -176,6 +200,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/aspect-ratio'),
     require('autoprefixer'),
     // require('tailwindcss'),
     function ({ addComponents }) {

@@ -7,7 +7,8 @@
 // import Zigzag from './components/Zigzag';
 // import ImageGrid from './components/ImageGrid';
 import './dist/style.css'
-import Location from './pages/Location';
+// import BlogSingle from './pages/BlogSingle';
+// import Location from './pages/Location';
 // import CommuintyProjects from './pages/CommuintyProjects';
 // import Fundraising from './pages/Fundraising';
 // import FundraisingEvents from './pages/FundraisingEvents';
@@ -20,11 +21,12 @@ import Location from './pages/Location';
 // import LeaveLegacy from './pages/LeaveLegacy';
 // import HelpHerd from './pages/HelpHerd';
 // import MeetKumbura from './pages/MeetKumbura';
+import Routing from './Routing';
 // import Partners from './pages/Partners';
 // import MeetHerd from './pages/MeetHerd';
 // import Foster from './pages/Foster';
 // import Orphans from './pages/Orphans';
-import MeetTeam from './pages/MeetTeam';
+// import MeetTeam from './pages/MeetTeam';
 // import Home from './pages/Home';
 // import Routing from './Routing';
 
@@ -32,6 +34,7 @@ import MeetTeam from './pages/MeetTeam';
 function App() {
   return (
     <>
+      <Routing />
       {/* <Routing /> */}
       {/* <Header />
       <SectionHero />
@@ -59,7 +62,8 @@ function App() {
       {/* <HerdShop /> */}
       {/* <OurStory /> */}
       {/* <MeetTeam /> */}
-      <Location />
+      {/* <Location /> */}
+      {/* <BlogSingle /> */}
 
     </>
   );

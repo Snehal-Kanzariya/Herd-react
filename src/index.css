@@ -27,4 +27,13 @@
     .circle {
         @apply h-264 w-264 rounded-full bg-gray-100
     }
+
+    /* foster tabing */
+    .nav-tabs .nav-link {
+        @apply px-15 text-11 leading-14 text-center tracking-wider mr-3 text-black-100 border border-solid border-black-100 rounded-750
+    }
+
+    .nav-tabs .nav-link.active {
+        @apply  !text-white border !border-black-100 rounded-750 bg-black-100
+    }
 }

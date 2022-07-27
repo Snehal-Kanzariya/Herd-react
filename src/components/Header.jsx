@@ -63,7 +63,7 @@ const Navbar = () => {
                     </ul>
                     <div className="buttons smallest:hidden sm:hidden lg:flex lg:items-center">
                         <button
-                            className="p-2 nav text-15 items-center text-16 mr-19 bg-transparent text-black-100 px-5 border border-black-100 hover:bg-black-100 hover:text-white hover:border-transparent rounded">
+                            className="p-2 nav items-center text-16 mr-19 bg-transparent text-black-100 px-5 border border-black-100 hover:bg-black-100 hover:text-white hover:border-transparent rounded">
                             Foster An Elephant
                         </button>
                         <button className="p-2 nav text-15 bg-green text-white border border-green rounded hover:bg-transparent hover:text-green">
@@ -124,7 +124,7 @@ const Navbar = () => {
                                 <li className="pb-4"><a href="#" className="flex"><img src={userIcon} alt="" className="pr-2" />
                                     My Account</a>
                                 </li>
-                                <li className="pb-4"><a href="#" className="flex"><img src={cartIcon} alt="" className="pr-2" />
+                                <li className="pb-4"><a href="" className="flex"><img src={cartIcon} alt="" className="pr-2" />
                                     My Cart</a>
                                 </li>
                             </ul>

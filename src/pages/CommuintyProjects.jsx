@@ -32,7 +32,7 @@ const CommuintyProjects = () => {
                 buttonText={"Fundraise"}
                 isButton={false}
                 isPb={true}
-
+                isParagraph1={true}
             />
             <Zigzag
                 zigzagImg={Projectzigzag2}
@@ -45,6 +45,8 @@ const CommuintyProjects = () => {
                 buttonText={"Meet Our Partners"}
                 isButton={false}
                 isPb={true}
+                isParagraph1={true}
+                isParagraph2={true}
             />
             <Zigzag
                 zigzagImg={Projectzigzag1}
@@ -57,6 +59,8 @@ const CommuintyProjects = () => {
                 buttonText={"Fundraise"}
                 isButton={false}
                 isPb={true}
+                isParagraph1={true}
+                isParagraph2={true}
 
             />
             <Zigzag
@@ -66,7 +70,9 @@ const CommuintyProjects = () => {
                 title={"The JabuLadies Project"}
                 paragraph="The JabuLadies project empowers local women, increasing their household income and promoting gender equality through equal opportunities. "
                 paragraph1="Miriam Mahladisa is a long-time employee and ambassador for this project. She makes a difference by training ladies in our Hoedspruit community to participate in various endeavours, such as embroidery and elephant dung paper making."
+                isParagraph1={true}
                 paragraph2="HERD then purchases handmade products from these ladies, markets and sells them. This sustainable business model benefits all parties involved, successfully uplifting our local community while also sharing their creative talents with the world."
+                isParagraph2={true}
                 buttonText={"Meet Our Partners"}
                 isButton={false}
             />

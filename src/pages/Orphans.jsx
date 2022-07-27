@@ -7,9 +7,44 @@ import Zigzag from '../components/Zigzag';
 import donation_partners from '../assets/donation_partners.png'
 import Help from '../components/Help';
 import News from '../components/News';
+import Image1 from '../assets/TimisaOrphans.png'
+import Image2 from '../assets/KhanyisaOrphans.png'
+import ImageGrid from '../components/ImageGrid'
+import rightArrow from '../assets/arrow_right.svg'
 
 
 const Orphans = () => {
+    const gridList = [
+        {
+            image: Image1,
+            title: "Timisa",
+            subTitle: "Female | 5 years old",
+            buttonText1: 'View Profile',
+            buttonText2: 'Foster'
+        },
+        {
+            image: Image2,
+            title: "Kumbura",
+            subTitle: "Female | 5 years old",
+            buttonText1: 'View Profile',
+            buttonText2: 'Foster'
+        },
+        {
+            image: Image1,
+            title: "Timisa",
+            subTitle: "Female | 5 years old",
+            buttonText1: 'View Profile',
+            buttonText2: 'Foster'
+        },
+        {
+            image: Image2,
+            title: "Kumbura",
+            subTitle: "Female | 5 years old",
+            buttonText1: 'View Profile',
+            buttonText2: 'Foster'
+        },
+    ]
+
     return (
         <Layout>
             <SectionHero
@@ -31,6 +66,21 @@ const Orphans = () => {
                 buttonText={"Meet Our Partners"}
                 isButton={false}
             />
+
+            <div className="pb-150">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-25 px-25 sm:px-50">
+                    {gridList.map(item => {
+                        return <ImageGrid image={item.image} title={item.title} subTitle={item.subTitle} buttonText1={item.buttonText1} buttonText2={item.buttonText2} />
+                    })}
+                </div>
+                <button className="flex justify-center mx-auto mb-0 mt-99">
+                    <div className="flex border-b border-[#00000066]">
+                        <span className="pr-3 mb-2 font-sans text-16">View All Elephants</span>
+                        <img src={rightArrow} alt="" className="flex " />
+                    </div>
+                </button>
+            </div>
+
             <Help
                 mainTitle="How you can help"
                 mainParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
