@@ -5,10 +5,10 @@ import heroImage from "../assets/meetKumburaHero.png";
 import ImageGrid from '../components/ImageGrid'
 import blog1 from '../assets/blog1.png'
 import blog2 from '../assets/blog2.png'
+import ContentGrid from '../components/ContentGrid'
 import Image1 from '../assets/timisatabgrid.png'
 import Image2 from '../assets/tabgridKhanyisa.png'
 import Image3 from '../assets/tabgridKumbura.png'
-import rightArrow from '../assets/arrow_right.svg'
 import Help from '../components/Help';
 import News from '../components/News';
 
@@ -16,9 +16,15 @@ const MeetKumbura = () => {
     const blog = [
         {
             image: blog1,
+            isSubTitle: true,
+            title: 'How’s Kumbura Doing? | An Update on a Special Elephant Orphan',
+            isTextSize: true,
         },
         {
             image: blog2,
+            isSubTitle: true,
+            title: 'Kumbura and Khanyisa | Going Everywhere together',
+            isTextSize: true,
         },
     ]
 
@@ -60,14 +66,12 @@ const MeetKumbura = () => {
             {/* Blogs Featuring Kumbura */}
             <div className="pt-113">
                 <h1 className="pb-51 title text-black-100 text-30 ml-55 uppercase">Blogs Featuring Kumbura</h1>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-25 px-25 sm:px-50">
+                <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-25 px-25 sm:px-50">
                     {blog.map(item => {
-                        return <ImageGrid image={item.image} />
+                        return <ContentGrid image={item.image} isSubTitle={item.isSubTitle} title={item.title} buttonTxt={item.buttonTxt} isTextSize={item.isTextSize} />
                     })}
                 </div>
             </div>
-
-
 
             {/* View other Orphans */}
             <div className="pt-208 pb-150">
@@ -77,12 +81,6 @@ const MeetKumbura = () => {
                         return <ImageGrid image={item.image} title={item.title} subTitle={item.subTitle} buttonText1={item.buttonText1} buttonText2={item.buttonText2} />
                     })}
                 </div>
-                <button className="flex justify-center mx-auto mb-0 mt-99">
-                    <div className="flex border-b border-[#00000066]">
-                        <span className="pr-3 mb-2 font-sans text-16">View All Elephants</span>
-                        <img src={rightArrow} alt="" className="flex " />
-                    </div>
-                </button>
             </div>
 
             <Help

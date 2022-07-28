@@ -36,4 +36,8 @@
     .nav-tabs .nav-link.active {
         @apply  !text-white border !border-black-100 rounded-750 bg-black-100
     }
+
+    .nav-tabs .nav-link:hover {
+        @apply border border-black-100
+    }
 }
