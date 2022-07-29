@@ -13,11 +13,11 @@ import bgmenu from '../assets/menubg.png';
 
 const Navbar = () => {
     let Links = [
-        { name: "Orphans", link: "/" },
-        { name: "Meet The Herd", link: "/" },
-        { name: "Projects", link: "/" },
-        { name: "Our Story", link: "/" },
-        { name: "HERD Shop", link: "/" },
+        { name: "Orphans", link: "/Orphans" },
+        { name: "Meet The Herd", link: "/MeetHerd" },
+        { name: "Projects", link: "/Projects" },
+        { name: "Our Story", link: "/OurStory" },
+        { name: "HERD Shop", link: "/HerdShop" },
     ]
 
     return (
@@ -51,7 +51,7 @@ const Navbar = () => {
                         {
                             Links.map((Link) => (
                                 <li className="lg:pr-3 xl:pr-27 nav">
-                                    <a href="Link.link" className="lg:text-sm xl:text-base">{Link.name}</a>
+                                    <a href={Links.link} className="lg:text-sm xl:text-base">{Link.name}</a>
                                 </li>
                             ))
                         }
