@@ -2,6 +2,7 @@ import React from 'react'
 import grid1 from '../assets/Herdgrid.png';
 import grid2 from '../assets/communitygrid.png';
 import grid3 from '../assets/Orphanagegrid.png';
+import { Link } from 'react-router-dom';
 
 const News = ({ mainTitle, description }) => {
     return (
@@ -45,10 +46,13 @@ const News = ({ mainTitle, description }) => {
                     </div>
                 </div>
             </div>
-            <button
-                class="p-2 font-sans mt-82 flex justify-center my-0 mx-auto bg-transparent text-black-100 px-5 border border-gray-600 hover:bg-black-100 hover:text-white hover:border-transparent rounded">
-                Discover Our Blog
-            </button>
+            <Link to='/HerdBlog'>
+                <button
+                    class="p-2 font-sans mt-82 flex justify-center my-0 mx-auto bg-transparent text-black-100 px-5 border border-gray-600 hover:bg-black-100 hover:text-white hover:border-transparent rounded">
+                    Discover Our Blog
+                </button>
+            </Link>
+
         </section>
     )
 }

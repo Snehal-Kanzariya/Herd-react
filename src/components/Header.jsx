@@ -9,9 +9,11 @@ import userIcon from '../assets/user.svg'
 import cartIcon from '../assets/cart_black.svg'
 import closeIcon from '../assets/close.svg'
 import bgmenu from '../assets/menubg.png';
+import { Link } from 'react-router-dom'
 
 
-const Navbar = () => {
+
+const Header = () => {
     let Links = [
         { name: "Orphans", link: "/Orphans" },
         { name: "Meet The Herd", link: "/MeetHerd" },
@@ -24,34 +26,41 @@ const Navbar = () => {
         <div className="header">
             <ul className="text-white smallest:text-10 sm:text-base flex text-right justify-end bg-black-100">
                 <li className="p-3">
-                    <a href="#" className='flex'>
-                        <img src={loginImg} alt="" className='pr-2' />
-                        Login
-                    </a>
+                    <Link to="/">
+                        <div className='flex'>
+                            <img src={loginImg} alt="" className='pr-2' />
+                            Login
+                        </div>
+                    </Link>
                 </li>
                 <li className="p-3">
-                    <a href="#" className="flex">
-                        <img src={accountImg} alt="" className="pr-2" />
-                        My Account
-                    </a>
+                    <Link to="../Account">
+                        <div className="flex">
+                            <img src={accountImg} alt="" className="pr-2" />My Account
+                        </div>
+                    </Link>
                 </li>
                 <li className="p-3">
-                    <a href="#" className="flex">
-                        <img src={cartImg} alt="" className="pr-2" />
-                        My Cart
-                    </a>
+                    <Link to="../Cart">
+                        <div className="flex">
+                            <img src={cartImg} alt="" className="pr-2" />
+                            My Cart
+                        </div>
+                    </Link>
                 </li>
             </ul>
             <nav className="shadow-md w-full">
                 <div className="smallest:flex sm:flex items-center justify-between bg-gray-100 pt-21 pb-25 smallest:px-5 sm:px-5 md:px-10 px-7">
                     <div className="cursor-pointer pl-6">
-                        <img src={logoImg} alt="" />
+                        <Link to="/">
+                            <img src={logoImg} alt="" />
+                        </Link>
                     </div>
                     <ul className="lg:flex lg:items-center smallest:hidden sm:hidden">
                         {
-                            Links.map((Link) => (
+                            Links.map((Links) => (
                                 <li className="lg:pr-3 xl:pr-27 nav">
-                                    <a href={Links.link} className="lg:text-sm xl:text-base">{Link.name}</a>
+                                    <Link to={Links.link} className="lg:text-sm xl:text-base">{Links.name}</Link>
                                 </li>
                             ))
                         }
@@ -62,13 +71,18 @@ const Navbar = () => {
                         </di>
                     </ul>
                     <div className="buttons smallest:hidden sm:hidden lg:flex lg:items-center">
-                        <button
-                            className="p-2 nav items-center text-16 mr-19 bg-transparent text-black-100 px-5 border border-black-100 hover:bg-black-100 hover:text-white hover:border-transparent rounded">
-                            Foster An Elephant
-                        </button>
-                        <button className="p-2 nav text-15 bg-green text-white border border-green rounded hover:bg-transparent hover:text-green">
-                            Donate
-                        </button>
+                        <Link to="/Foster">
+                            <button
+                                className="p-2 nav items-center text-16 mr-19 bg-transparent text-black-100 px-5 border border-black-100 hover:bg-black-100 hover:text-white hover:border-transparent rounded">
+                                Foster An Elephant
+                            </button>
+                        </Link>
+                        <Link to="/Donation">
+                            <button className="p-2 nav text-15 bg-green text-white border border-green rounded hover:bg-transparent hover:text-green">
+                                Donate
+                            </button>
+                        </Link>
+
                     </div>
                     <div className="smallest:flex sm:flex lg:hidden " type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -136,4 +150,5 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Header
+

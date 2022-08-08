@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import grid1 from '../assets/grid1.png';
 import grid2 from '../assets/grid2.png';
 import grid3 from '../assets/grid3.png';
@@ -20,10 +21,13 @@ const Help = ({ mainTitle, mainParagraph, isBgGray }) => {
                     <div className="absolute bottom-11">
                         <h1 className="font-sans text-white xs:text-xl sm:!text-27 leading-34 tracking-wider pb-17">
                             Foster an Elephant</h1>
-                        <button
-                            className="font-sans justify-center flex mx-auto my-0 p-2 text-base items-center bg-transparent text-white px-14 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
-                            Learn More
-                        </button>
+                        <Link to='/Foster'>
+                            <button
+                                className="font-sans justify-center flex mx-auto my-0 p-2 text-base items-center bg-transparent text-white px-14 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
+                                Learn More
+                            </button>
+                        </Link>
+
                     </div>
                 </div>
                 <div className="relative xs:justify-center xs:flex">
@@ -32,10 +36,13 @@ const Help = ({ mainTitle, mainParagraph, isBgGray }) => {
                         <h1 className="font-sans text-white xs:text-xl sm:!text-27 leading-34 tracking-wider pb-17">
                             Help The Herd
                         </h1>
-                        <button
-                            className="font-sans justify-center flex mx-auto my-0 p-2 text-base items-center bg-transparent text-white px-14 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
-                            Make a Donation
-                        </button>
+                        <Link to='/Donation'>
+                            <button
+                                className="font-sans justify-center flex mx-auto my-0 p-2 text-base items-center bg-transparent text-white px-14 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
+                                Make a Donation
+                            </button>
+                        </Link>
+
                     </div>
                 </div>
                 <div className="relative xs:justify-center xs:flex">
@@ -44,10 +51,12 @@ const Help = ({ mainTitle, mainParagraph, isBgGray }) => {
                         <h1 className="font-sans text-white xs:text-xl sm:!text-27 leading-34 tracking-wider pb-17">
                             Browse Our Shop
                         </h1>
-                        <button
-                            className="font-sans justify-center flex mx-auto my-0 p-2 text-base items-center bg-transparent text-white px-14 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
-                            Shop Now
-                        </button>
+                        <Link to='/HerdShop'>
+                            <button
+                                className="font-sans justify-center flex mx-auto my-0 p-2 text-base items-center bg-transparent text-white px-14 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
+                                Shop Now
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

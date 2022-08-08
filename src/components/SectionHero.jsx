@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SectionHero = ({ heroImage, heroTitle, isButton, isBottom, subTitle, greemButton, isGreenButton }) => {
     return (
@@ -11,9 +12,12 @@ const SectionHero = ({ heroImage, heroTitle, isButton, isBottom, subTitle, greem
                         {heroTitle}
                     </h1>
                     {isButton &&
-                        <button className="font-sans text-15 my-0 mx-auto mt-5 justify-center flex bg-transparent text-white py-6 px-30 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
-                            Our Story
-                        </button>
+                        <Link to='/OurStory'>
+                            <button className="font-sans text-15 my-0 mx-auto mt-5 justify-center flex bg-transparent text-white py-6 px-30 border border-white hover:bg-white hover:text-black-100 hover:border-transparent rounded">
+                                Our Story
+                            </button>
+                        </Link>
+
                     }
                     {isGreenButton &&
                         <button

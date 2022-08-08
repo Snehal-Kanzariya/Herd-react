@@ -6,10 +6,29 @@ import Content from '../components/Content';
 import Zigzag from '../components/Zigzag';
 import Projectzigzag1 from '../assets/Projectzigzag1.png'
 import Projectzigzag2 from '../assets/Projectzigzag2.png'
+import ContentGrid from '../components/ContentGrid'
+import pGrid1 from '../assets/projectGrid1.png'
+import pGrid2 from '../assets/projectsGrid2.png'
 import Help from '../components/Help';
 import News from '../components/News';
 
 const CommuintyProjects = () => {
+    const grid = [
+        {
+            image: pGrid1,
+            title: 'Orphan Programme',
+            description: "Our elephant orphan programme started with a baby elephant named Jabulani, the very first elephant we 'adopted' in 2002.",
+            buttonTxt: 'Find Out More',
+            isButton: true,
+        },
+        {
+            image: pGrid2,
+            title: 'Sustainability',
+            description: "We aim to do everything we can to be sustainable, from how we feed our elephants, to protecting the land they live on.",
+            buttonTxt: 'Find Out More',
+            isButton: true,
+        },
+    ]
     return (
         <Layout>
             <SectionHero
@@ -76,6 +95,14 @@ const CommuintyProjects = () => {
                 buttonText={"Meet Our Partners"}
                 isButton={false}
             />
+            <div className="pt-149 pb-103">
+                <h1 class="font-sans text-center pb-76 text-30 uppercase text-black-100">discover Other projects</h1>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-50 gap-x-25 px-25 sm:px-50">
+                    {grid.map(item => {
+                        return <ContentGrid image={item.image} title={item.title} description={item.description} buttonTxt={item.buttonTxt} isButton={item.isButton} isMb={item.isMb} />
+                    })}
+                </div>
+            </div>
             <Help
                 mainTitle="Help Save Our Most Vulnerable Gentle Giants "
                 mainParagraph="We rely on incredible people like you to keep us going. Every cent counts, and no contribution is too small. HERD’s running costs all come from public funding to take us from month to month, so we really appreciate your support. "

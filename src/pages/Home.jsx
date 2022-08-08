@@ -12,6 +12,7 @@ import raisefund from '../assets/raisefund.png'
 import donation_partners from '../assets/donation_partners.png'
 import News from '../components/News'
 import Team from '../assets/team.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -109,8 +110,10 @@ const Home = () => {
                 isPt136={true}
                 title={"South Africa’s Plea for an Elephant Orphanage"}
                 paragraph={"HERD is the First Dedicated South African Elephant Orphanage. The unfortunate truth is that there are an ever-increasing number of orphaned and displaced elephant calves in South Africa. This is linked to the rising poaching numbers, taking mothers away from their calves before they can fend for themselves in the wild. And that’s where HERD comes in, acting as their unique adoptive family to help raise them in a safe environment. "}
+                linkButton="/OurStory"
                 buttonText={"Our Story"}
                 isButton={true}
+                isPb={true}
             />
             <Zigzag
                 zigzagImg={raisefund}
@@ -120,7 +123,7 @@ const Home = () => {
                 paragraph={"Be a champion to our elephants by hosting a third-party fundraising event to aid our HERD Trust. Giving your time and resources to help spread the word about our elephant orphans means the world to us, and more importantly, to their survival. The funds you raise will directly go to our initiatives and make the world’s difference."}
                 buttonText={"Fundraise"}
                 isButton={true}
-
+                isPb={true}
             />
             <Zigzag
                 zigzagImg={donation_partners}
@@ -145,7 +148,7 @@ const Home = () => {
                             lovingly nurture and protect our elephants around the clock to ensure their wellbeing.
                         </p>
                         <button
-                            className="xs:text-10 sm:text-15 font-sans py-1 bg-transparent text-white px-5 border border-white hover:bg-white hover:text-black hover:border-transparent rounded">
+                            className="xs:text-10 sm:!text-15 font-sans py-2 bg-transparent text-white px-5 border border-white hover:bg-white hover:text-black hover:border-transparent rounded">
                             Learn More
                         </button>
                     </div>

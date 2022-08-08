@@ -23,7 +23,35 @@ const Donation = () => {
             <Content
                 description="Every little bit makes a difference, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             />
+
+            <div className="donations bg-gray-100">
+                <div className="grid grid-cols-1 xl:grid-cols-2 pb-83">
+                    <div className="xs:justify-center xs:flex xl:pl-190 md:border-r border-r-green border-opacity-60 ">
+                        <div className="pt-63 pb-68">
+                            <h1 className="pl-29 font-sans pb-41 text-35 text-black-100">Once-off donation</h1>
+                            <input type="text" placeholder="$50" className="px-5 py-2 mr-6" />
+                            <button className="bg-green text-white p-3 font-sans rounded px-17 py-2 font-medium text-15">
+                                Donate
+                            </button>
+                        </div>
+                    </div>
+                    <div className="xs:justify-center xs:flex">
+                        <div className="pt-63 pb-68">
+                            <h1 className="pl-29 font-sans pb-41 text-35 text-black-100">Monthly donation</h1>
+                            <input type="text" placeholder="$15" className="px-5 py-2 mr-6" />
+                            <button className="bg-green text-white p-3 font-sans rounded px-17 py-2 font-medium text-15">
+                                Donate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="donation-title pt-150 justify-center flex pb-52 font-normal leading-38 tracking-wider">
+                <h1 className="font-sans text-30 px-25 uppercase text-black-100">Other ways you can donate</h1>
+            </div>
             <Zigzag
+                isPt={true}
                 zigzagImg={type1}
                 isPr={false}
                 isReverse={true}
@@ -32,7 +60,6 @@ const Donation = () => {
                 buttonText={"Find Out More"}
                 isButton={true}
                 isPb={true}
-
             />
             <Zigzag
                 zigzagImg={type2}

@@ -6,10 +6,29 @@ import Content from '../components/Content';
 import Zigzag from '../components/Zigzag';
 import fundevetzigzag1 from '../assets/fundevetzigzag1.png'
 import fundevetzigzag2 from '../assets/fundevetzigzag2.png'
+import ContentGrid from '../components/ContentGrid'
+import pGrid1 from '../assets/eventGrid1.png'
+import pGrid2 from '../assets/eventGrid2.png'
 import Help from '../components/Help';
 import News from '../components/News';
 
 const FundraisingEvents = () => {
+    const grid = [
+        {
+            image: pGrid1,
+            title: 'Fundraise for HERD',
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+            buttonTxt: 'Find Out More',
+            isButton: true,
+        },
+        {
+            image: pGrid2,
+            title: 'Corperate Fundraising',
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+            buttonTxt: 'Find Out More',
+            isButton: true,
+        },
+    ]
     return (
         <Layout>
             <SectionHero
@@ -23,6 +42,7 @@ const FundraisingEvents = () => {
             <Content
                 description="Would you like to get involved? em ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum."
             />
+
             <Zigzag
                 zigzagImg={fundevetzigzag1}
                 isPr={false}
@@ -43,6 +63,14 @@ const FundraisingEvents = () => {
                 buttonText={"Find Out More"}
                 isButton={false}
             />
+            <div className="pt-145 pb-150">
+                <h1 class="font-sans text-center pb-76 text-30 uppercase text-black-100">discover Other fundraising</h1>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-50 gap-x-25 px-25 sm:px-50">
+                    {grid.map(item => {
+                        return <ContentGrid image={item.image} title={item.title} description={item.description} buttonTxt={item.buttonTxt} isButton={item.isButton} isMb={item.isMb} />
+                    })}
+                </div>
+            </div>
             <Help
                 mainTitle="How you can help"
                 mainParagraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."

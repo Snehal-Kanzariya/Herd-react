@@ -3,7 +3,9 @@ import Layout from '../components/Layout'
 
 const Cart = () => {
     return (
-        <Layout></Layout>
+        <Layout>
+            cart
+        </Layout>
     )
 }
 
